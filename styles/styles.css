@@ -1,0 +1,35 @@
+/* styles/styles.css */
+
+/* Basic styling for characters list */
+.character {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+  }
+  
+  .character img {
+    max-width: 100px;
+  }
+  
+  /* Basic styling for statistics */
+  .statistics {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .statistics h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .statistics ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .statistics li {
+    margin: 5px 0;
+  }
+  

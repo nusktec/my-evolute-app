@@ -1,0 +1,54 @@
+.container {
+    margin: 20px;
+  }
+  
+  .characterList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .characterCard {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    background-color: #f7f7f7;
+    transition: transform 0.3s;
+  }
+  
+  .characterCard:hover {
+    transform: translateY(-5px);
+  }
+  
+  .characterImage {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .characterName,
+  .characterStatus {
+    font-size: 16px;
+    margin: 8px 0;
+  }
+  
+  .detailsLink {
+    color: #0070f3;
+    text-decoration: none;
+  }
+  
+  .paginationButton {
+    display: block;
+    margin: 20px auto;
+    padding: 8px 16px;
+    background-color: #0070f3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .paginationButton:hover {
+    background-color: #0056b3;
+  }
+  

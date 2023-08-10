@@ -1,0 +1,53 @@
+/* CharacterDetailsPage.module.css */
+
+.loading {
+    font-size: 18px;
+    color: #888;
+    margin: 20px;
+  }
+  
+  .characterDetails {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .characterImage {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .characterName {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .characterStatus {
+    font-weight: bold;
+    color: #ff6347; /* Tomato color */
+  }
+  
+  .characterSpecies {
+    font-style: italic;
+    color: #888;
+  }
+  
+  .characterCreated {
+    color: #666;
+  }
+  
+  .characterGender {
+    color: #333;
+  }
+  
+  .characterLocation {
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  .characterEpisodes {
+    margin-top: 10px;
+    color: #777;
+  }
+  
