@@ -24,7 +24,7 @@ function CharactersPage() {
     <div className={styles.container}>
       <h1>Characters List</h1>
       <div className={styles.characterList}>
-        {characters.map((character) => (
+        {/* {characters.map((character) => (
           <div key={character.id} className={styles.characterCard}>
             <img src={character.image} alt={character.name} className={styles.characterImage} />
             <p className={styles.characterName}>Name: {character.name}</p>
@@ -33,7 +33,22 @@ function CharactersPage() {
               <div className={styles.detailsLink}>Details</div>
             </Link>
           </div>
+        ))} */}
+
+
+        {characters.map((character: any) => (
+          <Link key={character.id} href={`/character/${character.id}`}>
+            <div className={styles.characterCardLink}>
+              <div className={styles.characterCard}>
+                <img src={character.image} alt={character.name} className={styles.characterImage} />
+                <p className={styles.characterName}>Name: {character.name}</p>
+                <p className={styles.characterStatus}>Status: {character.status}</p>
+                <div className={styles.detailsLink}>Details</div>
+              </div>
+            </div>
+          </Link>
         ))}
+
       </div>
       <div className={styles.paginationButtons}>
         <button
