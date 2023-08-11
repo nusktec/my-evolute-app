@@ -1,65 +1,71 @@
 .container {
-  margin: 20px;
+    margin: 20px;
 }
 
 .characterList {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
 }
 
 .characterCard {
-  border: 1px solid #ccc;
-  padding: 10px;
-  text-align: center;
-  background-color: #f7f7f7;
-  transition: transform 0.3s;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    background-color: #f7f7f7;
+    transition: transform 0.3s;
 }
 
 .characterCard:hover {
-  transform: translateY(-5px);
+    transform: translateY(-5px);
 }
 
 .characterImage {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .characterName,
 .characterStatus {
-  font-size: 16px;
-  margin: 8px 0;
+    font-size: 16px;
+    margin: 8px 0;
+    color: black;
 }
 
 .detailsLink {
-  color: #0070f3;
-  text-decoration: none;
+    color: #0070f3;
+    text-decoration: none;
 }
 
 .paginationButton {
-  display: block;
-  margin: 20px auto;
-  padding: 8px 16px;
-  background-color: #0070f3;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+    display: block;
+    margin: 20px auto;
+    padding: 8px 16px;
+    background-color: #0070f3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .paginationButton:hover {
-  background-color: #0056b3;
+    background-color: #0056b3;
 }
 
 
 .paginationButtons {
     display: flex;
     justify-content: center;
+    align-content: center;
     margin-top: 20px;
-  }
-  
-  .paginationButton {
+}
+
+.paginationButtons span {
+    margin-top: 10px;
+}
+
+.paginationButton {
     padding: 10px 15px;
     margin: 0 5px;
     background-color: #007bff;
@@ -68,19 +74,25 @@
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  .paginationButton:hover {
+}
+
+.paginationButton:hover {
     background-color: #0056b3;
-  }
-  
-  .previousButton[disabled],
-  .nextButton[disabled] {
+}
+
+.previousButton[disabled],
+.nextButton[disabled] {
     background-color: #cccccc;
     cursor: not-allowed;
-  }
-  
-  .previousButton:hover[disabled],
-  .nextButton:hover[disabled] {
+}
+
+.previousButton:hover[disabled],
+.nextButton:hover[disabled] {
     background-color: #cccccc;
-  }
+}
+
+.emptyPage {
+    margin-top: 20px;
+    font-size: large;
+    color: white;
+}

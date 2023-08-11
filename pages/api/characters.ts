@@ -1,6 +1,7 @@
 import charactersData from '../api/evo-task-data.json';
 
-export default function handler(req, res) {
+// @ts-ignore
+export default function handler(req: any, res: any) {
   const { id } = req.query;
     console.log(id, "charactercharactercharactercharacter");
   if (id) {

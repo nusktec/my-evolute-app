@@ -20,7 +20,7 @@ export default function Home() {
 
   return (
     <div>
-      <CharactersPage />
+      <CharactersPage/>
       <hr />
       {/* Pass characters data to the StatisticsPage */}
       <StatisticsPage characters={characters} />
